@@ -3,34 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TrueMedic Pharmacy | Quality Medicine Delivered with Care | Jaipur</title>
-    <meta name="description" content="TrueMedic Pharmacy in Bani Park, Jaipur. Proprietorship by Gaurav Tambi. Quality medicines, prescription fulfillment, and healthcare products delivered with care.">
+    <title>TrueMedic Pharmacy | Home Delivery of Medicines | Bani Park, Jaipur</title>
+    <meta name="description" content="TrueMedic Pharmacy in Bani Park, Jaipur. Fast & reliable home delivery of genuine prescription & OTC medicines. Proprietor: Gaurav Tambi. Call or WhatsApp +91 77425 08948. GSTIN: 08AGSPT3788N2Z1.">
     <link rel="canonical" href="https://truemedic.in/" />
-    
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Google Fonts -->
+
+    <!-- Open Graph / WhatsApp Preview Meta Tags -->
+    <meta property="og:title" content="TrueMedic Pharmacy — Fast Home Delivery of Medicines in Jaipur" />
+    <meta property="og:description" content="100% genuine medicines delivered to your doorstep in Bani Park & across Jaipur. Proprietor: Gaurav Tambi. Call or WhatsApp +91 77425 08948." />
+    <meta property="og:url" content="https://truemedic.in/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Google Fonts: Inter (UI) & Merriweather (Brand Serif) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:ital,wght@0,700;0,900;1,400&display=swap" rel="stylesheet">
 
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
-                    fontFamily: {
-                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-                        serif: ['"Playfair Display"', 'serif'],
-                    },
                     colors: {
-                        brand: {
-                            blue: '#0f4c81',
-                            darkBlue: '#082f52',
-                            lightBlue: '#f0f7ff',
-                            red: '#c81e1e',
-                            darkRed: '#9b1c1c',
-                        }
+                        brandBlue: '#164e9f',
+                        brandBlueDark: '#0d326c',
+                        brandRed: '#c52228',
+                        brandRedDark: '#8f161b',
+                        whatsapp: '#1fa855',
+                        whatsappDark: '#178542',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+                        serif: ['Merriweather', 'Georgia', 'serif'],
                     }
                 }
             }
@@ -38,485 +42,915 @@
     </script>
 
     <style>
-        /* Subtle Medical Pattern Background */
+        /* Subtle Clinical Medical Pattern Background */
         .bg-medical-pattern {
             background-color: #f8fafc;
-            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%230f4c81' fill-opacity='0.035'%3E%3Cpath d='M26 18h8v8h8v8h-8v8h-8v-8h-8v-8h8v-8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='M54 36h12v18h18v12H66v18H54V66H36V54h18V36z' fill='%23164e9f' fill-opacity='0.032'/%3E%3Ccircle cx='60' cy='60' r='42' stroke='%23c52228' stroke-opacity='0.025' stroke-width='1.5'/%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        /* Hero Mesh Glow */
+        .hero-mesh {
+            background: radial-gradient(circle at 15% 20%, rgba(22, 78, 159, 0.09) 0%, transparent 45%),
+                        radial-gradient(circle at 85% 30%, rgba(197, 34, 40, 0.08) 0%, transparent 45%),
+                        linear-gradient(180deg, #f0f6ff 0%, #f8fafc 100%);
+        }
+
+        /* Floating Animation for Hero Emblem Card */
+        @keyframes floatSlow {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-6px); }
+        }
+        .animate-float {
+            animation: floatSlow 5s ease-in-out infinite;
         }
 
         /* Instagram Gradient */
         .bg-instagram {
             background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
         }
-        .hover-bg-instagram:hover {
+        .bg-instagram:hover {
             filter: brightness(1.08);
         }
     </style>
 </head>
-<body class="bg-medical-pattern text-slate-800 antialiased pb-20 md:pb-0">
+<body class="bg-medical-pattern text-slate-800 antialiased selection:bg-brandBlue selection:text-white pb-20 lg:pb-0">
 
-    <!-- Top Announcement / Verification Bar -->
-    <div class="bg-brand-darkBlue text-white text-xs sm:text-sm py-2.5 px-4 border-b border-white/10">
-        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
-            <div class="flex items-center gap-2">
-                <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-400/30">
-                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 mr-1.5 animate-pulse"></span>
-                    GST Verified Pharmacy
+    <!-- ========================================== -->
+    <!-- 1. TOP ANNOUNCEMENT & OFFICIAL TRUST BAR   -->
+    <!-- ========================================== -->
+    <div class="bg-slate-900 text-slate-200 text-xs border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 flex flex-wrap items-center justify-between gap-y-2">
+            <!-- Left: Fast Home Delivery & Verified GST -->
+            <div class="flex flex-wrap items-center gap-2.5 sm:gap-4">
+                <span class="inline-flex items-center gap-1.5 font-bold text-amber-300 bg-amber-500/15 border border-amber-400/30 px-2.5 py-0.5 rounded-full">
+                    <svg class="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"/>
+                    </svg>
+                    Fast Home Delivery Available Across Jaipur
                 </span>
-                <span class="font-mono text-slate-300 hidden sm:inline">GSTIN: 08AGSPT3788N2Z1</span>
+                <span class="font-mono text-[11px] bg-slate-800 text-slate-200 px-2.5 py-0.5 rounded border border-slate-700">
+                    GSTIN: <strong class="text-white">08AGSPT3788N2Z1</strong>
+                </span>
+                <span class="hidden xl:inline-flex items-center gap-1.5 text-slate-300">
+                    <span class="w-1.5 h-1.5 rounded-full bg-brandRed"></span>
+                    Proprietor: <strong class="text-white">Gaurav Tambi</strong>
+                </span>
             </div>
-            <div class="flex items-center gap-4 ml-auto sm:ml-0">
-                <a href="tel:+917742508948" class="hover:text-sky-300 transition flex items-center gap-1 font-medium">
-                    <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-                    +91 77425 08948
+
+            <!-- Right: Quick Location, Instagram & Direct Phone -->
+            <div class="flex items-center gap-3.5 ml-auto sm:ml-0">
+                <a href="https://maps.app.goo.gl/58ofdFdYPLQ3ZkG46" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-1 hover:text-white transition-colors">
+                    <svg class="w-3.5 h-3.5 text-brandRed shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                    </svg>
+                    Bani Park, Jaipur
                 </a>
-                <span class="text-white/20">|</span>
-                <a href="https://www.instagram.com/truemedic_pharmacy?dlrf=MWdpMHFyYXJ4NWNo" target="_blank" rel="noopener noreferrer" class="hover:text-pink-300 transition flex items-center gap-1 font-medium">
-                    <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                <span class="hidden sm:inline text-slate-700">|</span>
+                <a href="https://www.instagram.com/truemedic_pharmacy?dlrf=MWdpMHFyYXJ4NWNo" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-pink-400 hover:text-pink-300 font-semibold transition-colors">
+                    <svg class="w-3.5 h-3.5 shrink-0 fill-current" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
                     @truemedic_pharmacy
+                </a>
+                <span class="text-slate-700">|</span>
+                <a href="tel:+917742508948" class="inline-flex items-center gap-1.5 font-semibold text-white hover:text-blue-300 transition-colors">
+                    <svg class="w-3.5 h-3.5 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                    </svg>
+                    +91 77425 08948
                 </a>
             </div>
         </div>
     </div>
 
-    <!-- Sticky Glassmorphism Navbar -->
-    <header class="sticky top-0 z-40 bg-white/85 backdrop-blur-md border-b border-slate-200/80 shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <!-- Brand Title -->
-            <a href="#" class="flex items-center gap-3 group">
-                <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-brand-blue to-brand-darkBlue flex items-center justify-center text-white shadow-md">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M19 3H5c-1.1 0-1.99.9-1.99 2L3 19c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 11h-4v4h-4v-4H6v-4h4V6h4v4h4v4z"/>
+    <!-- ========================================== -->
+    <!-- 2. STICKY GLASSMORPHISM NAVBAR             -->
+    <!-- ========================================== -->
+    <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200/80 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+            
+            <!-- Brand Identity -->
+            <a href="#" class="flex items-center gap-3.5 group focus:outline-none">
+                <!-- Compact Vector Emblem Icon -->
+                <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-slate-100 to-slate-200 border-2 border-brandBlue/30 shadow-inner flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+                    <svg viewBox="0 0 100 100" class="w-9 h-9" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M 75,25 A 38,38 0 1,0 38,85" fill="none" stroke="#c52228" stroke-width="6" stroke-linecap="round" />
+                        <path d="M 38,22 H 56 V 38 H 72 V 56 H 56 V 72 H 38 V 56 H 22 V 38 H 38 Z" fill="#164e9f" />
+                        <path d="M 45,78 C 44,55 58,38 80,25 C 86,48 74,72 45,78 Z" fill="#c52228" stroke="#ffffff" stroke-width="2" />
                     </svg>
                 </div>
                 <div>
-                    <div class="text-xl font-extrabold tracking-tight leading-none">
-                        <span class="text-brand-blue">True</span> <span class="text-brand-red">Medic</span>
+                    <div class="font-serif text-xl sm:text-2xl font-black tracking-tight leading-none">
+                        <span class="text-brandBlue">True</span> <span class="text-brandRed">Medic</span>
                     </div>
-                    <div class="text-[11px] font-bold tracking-[0.22em] text-slate-500 uppercase mt-1">
-                        Pharmacy • Jaipur
+                    <div class="text-[10px] sm:text-[11px] font-extrabold tracking-[0.25em] text-brandBlue uppercase mt-1">
+                        — PHARMACY —
                     </div>
                 </div>
             </a>
 
-            <!-- Desktop Nav Links -->
-            <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
-                <a href="#services" class="hover:text-brand-blue transition">Services</a>
-                <a href="#credentials" class="hover:text-brand-blue transition">Credentials</a>
-                <a href="#location" class="hover:text-brand-blue transition">Store Location</a>
-                <a href="https://www.instagram.com/truemedic_pharmacy?dlrf=MWdpMHFyYXJ4NWNo" target="_blank" rel="noopener noreferrer" class="hover:text-pink-600 transition flex items-center gap-1.5">
-                    <svg class="w-4 h-4 text-pink-600" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            <!-- Desktop Navigation Links -->
+            <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-slate-600">
+                <a href="#about" class="hover:text-brandBlue transition-colors">Home Delivery</a>
+                <a href="#services" class="hover:text-brandBlue transition-colors">Pharmacy Services</a>
+                <a href="#credentials" class="hover:text-brandBlue transition-colors">Credentials &amp; GST</a>
+                <a href="#location" class="hover:text-brandBlue transition-colors">Jaipur Store &amp; Map</a>
+                <a href="https://www.instagram.com/truemedic_pharmacy?dlrf=MWdpMHFyYXJ4NWNo" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-pink-600 hover:text-pink-700 transition-colors">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
                     Instagram
                 </a>
             </nav>
 
-            <!-- Action Buttons -->
-            <div class="flex items-center gap-2.5">
-                <a href="https://wa.me/917742508948?text=Hello%20TrueMedic%20Pharmacy%2C%20I%20have%20an%20inquiry%20regarding%20medicines." target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-sm shadow-sm transition">
-                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/></svg>
-                    WhatsApp Order
+            <!-- Right CTA Actions -->
+            <div class="flex items-center gap-2.5 sm:gap-3">
+                <a href="tel:+917742508948" class="inline-flex items-center gap-2 bg-brandBlue hover:bg-brandBlueDark text-white font-semibold text-xs sm:text-sm px-4 py-2.5 rounded-xl shadow-sm shadow-blue-900/15 transition-all hover:-translate-y-0.5">
+                    <svg class="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24">
+                        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                    </svg>
+                    <span>Call Now</span>
                 </a>
-                <a href="tel:+917742508948" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-brand-blue hover:bg-brand-darkBlue text-white font-semibold text-sm shadow-sm transition">
-                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-                    Call Now
+                <a href="https://wa.me/917742508948?text=Hello%20TrueMedic%20Pharmacy,%20I%20would%20like%20to%20order%20medicines%20for%20home%20delivery." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-whatsapp hover:bg-whatsappDark text-white font-semibold text-xs sm:text-sm px-4 py-2.5 rounded-xl shadow-sm shadow-green-900/15 transition-all hover:-translate-y-0.5">
+                    <svg class="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24">
+                        <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.126.556 4.122 1.529 5.854l-1.529 5.584 5.715-1.499c1.685.918 3.614 1.442 5.669 1.442 6.627 0 12-5.373 12-12 0-6.627-5.373-12-11.384-11.381z"/>
+                    </svg>
+                    <span class="hidden sm:inline">Order Home Delivery</span>
+                    <span class="sm:hidden">WhatsApp</span>
                 </a>
             </div>
+
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="relative overflow-hidden py-12 sm:py-20 lg:py-24">
+    <!-- ========================================== -->
+    <!-- 3. FULL-WIDTH MODERN HERO SECTION          -->
+    <!-- ========================================== -->
+    <section id="about" class="hero-mesh relative overflow-hidden border-b border-slate-200/80 py-10 sm:py-16 lg:py-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
                 
-                <!-- Left Column: Copy & Primary CTAs -->
-                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-brand-blue text-xs font-bold uppercase tracking-wider">
-                        <span class="w-2 h-2 rounded-full bg-brand-red"></span>
-                        Quality Medicine Delivered with Care
+                <!-- Left Column: Headlines, Home Delivery Banner & Direct Actions (7 Cols) -->
+                <div class="lg:col-span-7 text-left space-y-6">
+                    
+                    <!-- Top Status Pill -->
+                    <div class="inline-flex flex-wrap items-center gap-2 bg-white border border-blue-200/90 shadow-sm px-3.5 py-1.5 rounded-full">
+                        <span class="flex h-2.5 w-2.5 relative">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                        </span>
+                        <span class="text-xs font-bold uppercase tracking-wider text-brandBlue">
+                            Fast &amp; Reliable Home Delivery of Medicines • Bani Park, Jaipur
+                        </span>
                     </div>
 
-                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.12]">
-                        Your Trusted Neighborhood <span class="text-brand-blue">Pharmacy</span> in <span class="text-brand-red">Jaipur.</span>
-                    </h1>
+                    <!-- Main Headline -->
+                    <div class="space-y-3">
+                        <p class="text-sm sm:text-base font-bold uppercase tracking-[0.2em] text-brandRed">
+                            TrueMedic Pharmacy • Doorstep Healthcare
+                        </p>
+                        <h1 class="font-serif text-3xl sm:text-5xl lg:text-[3.25rem] font-black text-slate-900 tracking-tight leading-[1.12]">
+                            Quality Medicine <br class="hidden sm:inline" />
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-brandBlue via-blue-700 to-brandRed">
+                                Delivered to Your Doorstep.
+                            </span>
+                        </h1>
+                    </div>
 
-                    <p class="text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-                        Welcome to <strong class="text-slate-900">TrueMedic Pharmacy</strong>, led by Proprietor <strong class="text-slate-900">Gaurav Tambi</strong>. Located at Doctors Bangla, Bani Park, we provide 100% genuine prescription medicines, healthcare essentials, and prompt customer support.
+                    <!-- Description Paragraph -->
+                    <p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl">
+                        Welcome to <strong class="text-slate-900 font-semibold">TrueMedic Pharmacy</strong>, located at Doctors Bangla, Jhotwara Road, Bani Park, Jaipur. Under the proprietorship of <strong class="text-slate-900 font-semibold">Gaurav Tambi</strong>, we provide <strong class="text-brandBlue font-bold">fast home delivery of medicines</strong>, 100% genuine prescription drugs, cold-chain biologicals, and daily wellness essentials right to your home.
                     </p>
 
-                    <!-- Primary Action Buttons -->
-                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3.5 pt-2">
-                        <a href="tel:+917742508948" class="inline-flex items-center gap-2.5 px-6 py-4 rounded-2xl bg-brand-blue hover:bg-brand-darkBlue text-white font-bold text-base shadow-lg shadow-blue-900/15 transition transform hover:-translate-y-0.5">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-                            Call +91 77425 08948
-                        </a>
-
-                        <a href="https://wa.me/917742508948?text=Hello%20TrueMedic%20Pharmacy%2C%20I%20would%20like%20to%20order%20medicines." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2.5 px-6 py-4 rounded-2xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-base shadow-lg shadow-emerald-900/15 transition transform hover:-translate-y-0.5">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/></svg>
-                            WhatsApp Business
-                        </a>
-
-                        <a href="https://www.instagram.com/truemedic_pharmacy?dlrf=MWdpMHFyYXJ4NWNo" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2.5 px-5 py-4 rounded-2xl bg-instagram hover-bg-instagram text-white font-bold text-base shadow-lg shadow-pink-900/15 transition transform hover:-translate-y-0.5">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-                            Follow on Instagram
-                        </a>
-                    </div>
-
-                    <!-- Quick Key Info Pills -->
-                    <div class="pt-4 grid grid-cols-1 sm:grid-cols-3 gap-3 text-left">
-                        <div class="bg-white/90 p-3.5 rounded-xl border border-slate-200/80 shadow-sm">
-                            <div class="text-xs font-semibold text-slate-400 uppercase">Proprietor</div>
-                            <div class="text-sm font-bold text-slate-800 mt-0.5">Gaurav Tambi</div>
-                        </div>
-                        <div class="bg-white/90 p-3.5 rounded-xl border border-slate-200/80 shadow-sm">
-                            <div class="text-xs font-semibold text-slate-400 uppercase">Location</div>
-                            <div class="text-sm font-bold text-slate-800 mt-0.5">Bani Park, Jaipur (302016)</div>
-                        </div>
-                        <div class="bg-white/90 p-3.5 rounded-xl border border-slate-200/80 shadow-sm">
-                            <div class="text-xs font-semibold text-slate-400 uppercase">Email Support</div>
-                            <a href="mailto:amsnearyou@gmail.com" class="text-sm font-bold text-brand-blue hover:underline mt-0.5 block truncate">amsnearyou@gmail.com</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right Column: High-Precision Official Logo Showcase -->
-                <div class="lg:col-span-5 flex flex-col items-center">
-                    <div class="relative w-full max-w-md bg-white rounded-3xl p-6 sm:p-8 shadow-2xl border border-slate-200/90">
-                        <div class="w-full flex items-center justify-center">
-                            <!-- Automatically loads logo.jpg if present in the repo, or falls back to exact SVG emblem replica -->
-                            <img 
-                                id="real-logo-img"
-                                src="logo.jpg" 
-                                alt="TrueMedic Pharmacy Official Emblem" 
-                                class="w-full aspect-[500/360] object-cover rounded-[50%] shadow-xl border-4 border-slate-200 hidden"
-                                onload="this.classList.remove('hidden'); document.getElementById('svg-logo-fallback').classList.add('hidden');"
-                                onerror="if(this.src.endsWith('logo.jpg')){this.src='image_d45068.jpg';}else{this.classList.add('hidden');}"
-                            >
-
-                            <!-- Exact High-Precision SVG Replica of the Metallic Oval TrueMedic Emblem -->
-                            <svg id="svg-logo-fallback" viewBox="0 0 500 360" class="w-full h-auto drop-shadow-xl" xmlns="http://www.w3.org/2000/svg">
-                                <defs>
-                                    <linearGradient id="chromeRim" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" stop-color="#f8fafc"/>
-                                        <stop offset="30%" stop-color="#cbd5e1"/>
-                                        <stop offset="50%" stop-color="#94a3b8"/>
-                                        <stop offset="70%" stop-color="#e2e8f0"/>
-                                        <stop offset="100%" stop-color="#64748b"/>
-                                    </linearGradient>
-                                    <linearGradient id="brushedSilver" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" stop-color="#f1f5f9"/>
-                                        <stop offset="50%" stop-color="#e2e8f0"/>
-                                        <stop offset="100%" stop-color="#cbd5e1"/>
-                                    </linearGradient>
-                                    <linearGradient id="blue3D" x1="0%" y1="0%" x2="0%" y2="100%">
-                                        <stop offset="0%" stop-color="#1e6091"/>
-                                        <stop offset="100%" stop-color="#0a3663"/>
-                                    </linearGradient>
-                                    <linearGradient id="red3D" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" stop-color="#ef4444"/>
-                                        <stop offset="55%" stop-color="#b91c1c"/>
-                                        <stop offset="100%" stop-color="#7f1d1d"/>
-                                    </linearGradient>
-                                    <path id="topTextArc" d="M 62,185 A 190,130 0 1,1 438,185" />
-                                    <path id="bottomTextArc" d="M 90,205 A 165,112 0 0,0 410,205" />
-                                </defs>
-
-                                <!-- Outer Chrome Oval Rim -->
-                                <ellipse cx="250" cy="180" rx="242" ry="170" fill="url(#chromeRim)" stroke="#475569" stroke-width="2"/>
-                                <!-- Royal Blue Outer Ring -->
-                                <ellipse cx="250" cy="180" rx="234" ry="162" fill="none" stroke="#0f4c81" stroke-width="5"/>
-                                <!-- Brushed Metal Track -->
-                                <ellipse cx="250" cy="180" rx="229" ry="157" fill="url(#brushedSilver)" />
-                                <!-- Crimson Inner Oval Border -->
-                                <ellipse cx="250" cy="180" rx="176" ry="116" fill="url(#brushedSilver)" stroke="#b91c1c" stroke-width="5"/>
-
-                                <!-- Top Curved Motto Text -->
-                                <text font-family="Georgia, serif" font-size="22" font-weight="600" fill="#0f4c81" letter-spacing="0.5">
-                                    <textPath href="#topTextArc" startOffset="50%" text-anchor="middle">
-                                        Quality Medicine Delivered with Care
-                                    </textPath>
-                                </text>
-
-                                <!-- Ruby Gemstone Dots -->
-                                <circle cx="67" cy="148" r="7" fill="url(#red3D)" stroke="#cbd5e1" stroke-width="2"/>
-                                <circle cx="433" cy="148" r="7" fill="url(#red3D)" stroke="#cbd5e1" stroke-width="2"/>
-
-                                <!-- Bottom Decorative Red Curves -->
-                                <path d="M 92,262 A 195,130 0 0,0 148,303" fill="none" stroke="#b91c1c" stroke-width="3.5" stroke-linecap="round"/>
-                                <path d="M 408,262 A 195,130 0 0,1 352,303" fill="none" stroke="#b91c1c" stroke-width="3.5" stroke-linecap="round"/>
-
-                                <!-- Bottom Curved Text -->
-                                <text font-family="Georgia, serif" font-size="27" font-weight="700" fill="#0f4c81" letter-spacing="2">
-                                    <textPath href="#bottomTextArc" startOffset="50%" text-anchor="middle">
-                                        Pharmacy
-                                    </textPath>
-                                </text>
-
-                                <!-- Center Emblem: Swoosh + Medical Cross + Red Leaf -->
-                                <g transform="translate(250, 118)">
-                                    <!-- Outer Red/Silver Crescent Swoosh -->
-                                    <path d="M -5,46 A 46,46 0 1,1 38,-22 A 41,41 0 1,0 -5,40 Z" fill="url(#red3D)"/>
-                                    <!-- 3D Blue Medical Cross -->
-                                    <path d="M -12,-30 H 12 V -8 H 34 V 14 H 12 V 36 H -12 V 14 H -34 V -8 H -12 Z" fill="url(#blue3D)" stroke="#e2e8f0" stroke-width="1.5"/>
-                                    <!-- Crimson Veined Leaf Overlapping Bottom-Right -->
-                                    <path d="M 0,38 C -2,12 15,-8 36,-22 C 42,5 28,32 0,38 Z" fill="url(#red3D)" stroke="#f8fafc" stroke-width="1.5"/>
-                                    <path d="M 2,35 Q 18,12 33,-17" fill="none" stroke="#fca5a5" stroke-width="1.5"/>
-                                </g>
-
-                                <!-- Center Brand Name: True Medic -->
-                                <text x="250" y="208" text-anchor="middle" font-family="Georgia, serif" font-size="52" font-weight="700" stroke="#ffffff" stroke-width="1.5" paint-order="stroke">
-                                    <tspan fill="#0f4c81">True </tspan><tspan fill="#b91c1c">Medic</tspan>
-                                </text>
-
-                                <!-- Subtitle: — PHARMACY — -->
-                                <line x1="125" y1="234" x2="155" y2="234" stroke="#0f4c81" stroke-width="3" stroke-linecap="round"/>
-                                <text x="250" y="241" text-anchor="middle" font-family="sans-serif" font-size="21" font-weight="800" fill="#0f4c81" letter-spacing="5">
-                                    PHARMACY
-                                </text>
-                                <line x1="345" y1="234" x2="375" y2="234" stroke="#0f4c81" stroke-width="3" stroke-linecap="round"/>
-                            </svg>
-                        </div>
-
-                        <!-- Bottom Caption inside Logo Card -->
-                        <div class="mt-6 pt-5 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
-                            <span>Official Registered Trade Emblem</span>
-                            <a href="https://www.instagram.com/truemedic_pharmacy?dlrf=MWdpMHFyYXJ4NWNo" target="_blank" rel="noopener noreferrer" class="font-bold text-pink-600 hover:underline flex items-center gap-1">
-                                @truemedic_pharmacy
-                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Bento Grid -->
-    <section id="services" class="py-14 bg-white border-y border-slate-200/80">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-12">
-                <span class="text-xs font-bold uppercase tracking-widest text-brand-blue">What We Offer</span>
-                <h2 class="text-3xl font-extrabold text-slate-900 mt-1">Complete Pharmacy & Healthcare Solutions</h2>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/70 hover:shadow-md transition">
-                    <div class="w-12 h-12 rounded-xl bg-blue-100 text-brand-blue flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
-                    </div>
-                    <h3 class="text-lg font-bold text-slate-900">Prescription Medicines</h3>
-                    <p class="text-sm text-slate-600 mt-2">100% authentic, temperature-controlled pharmaceutical formulations from trusted manufacturers.</p>
-                </div>
-
-                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/70 hover:shadow-md transition">
-                    <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
-                    </div>
-                    <h3 class="text-lg font-bold text-slate-900">WhatsApp Prescription</h3>
-                    <p class="text-sm text-slate-600 mt-2">Send your prescription directly on WhatsApp to +91 77425 08948 for quick availability checks and billing.</p>
-                </div>
-
-                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/70 hover:shadow-md transition">
-                    <div class="w-12 h-12 rounded-xl bg-red-100 text-brand-red flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
-                    </div>
-                    <h3 class="text-lg font-bold text-slate-900">OTC & Wellness Care</h3>
-                    <p class="text-sm text-slate-600 mt-2">Daily healthcare devices, vitamins, personal care products, and surgical supplies always in stock.</p>
-                </div>
-
-                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/70 hover:shadow-md transition">
-                    <div class="w-12 h-12 rounded-xl bg-pink-100 text-pink-600 flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-                    </div>
-                    <h3 class="text-lg font-bold text-slate-900">Community Updates</h3>
-                    <p class="text-sm text-slate-600 mt-2">Follow <a href="https://www.instagram.com/truemedic_pharmacy?dlrf=MWdpMHFyYXJ4NWNo" target="_blank" rel="noopener noreferrer" class="text-pink-600 font-semibold hover:underline">@truemedic_pharmacy</a> on Instagram for health tips and store updates.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Official GST & Proprietorship Credentials Section -->
-    <section id="credentials" class="py-12 bg-brand-darkBlue text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row items-start md:items-center justify-between mb-8 gap-4">
-                <div>
-                    <span class="text-xs font-bold uppercase tracking-widest text-sky-400">Government of India • Form GST REG-06</span>
-                    <h2 class="text-2xl sm:text-3xl font-extrabold mt-1">Official Registration & Business Credentials</h2>
-                </div>
-                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/10 border border-white/15 font-mono text-sm">
-                    <span class="text-slate-300">GSTIN:</span>
-                    <span class="font-bold text-emerald-400">08AGSPT3788N2Z1</span>
-                </div>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                <div class="bg-white/5 border border-white/10 rounded-2xl p-5">
-                    <div class="text-xs text-slate-400 uppercase font-semibold">Trade Name</div>
-                    <div class="text-lg font-bold text-white mt-1">TRUEMEDIC PHARMACY</div>
-                </div>
-                <div class="bg-white/5 border border-white/10 rounded-2xl p-5">
-                    <div class="text-xs text-slate-400 uppercase font-semibold">Legal Name / Proprietor</div>
-                    <div class="text-lg font-bold text-white mt-1">GAURAV TAMBI</div>
-                </div>
-                <div class="bg-white/5 border border-white/10 rounded-2xl p-5">
-                    <div class="text-xs text-slate-400 uppercase font-semibold">Constitution of Business</div>
-                    <div class="text-lg font-bold text-white mt-1">Proprietorship (Regular)</div>
-                </div>
-                <div class="bg-white/5 border border-white/10 rounded-2xl p-5">
-                    <div class="text-xs text-slate-400 uppercase font-semibold">Jurisdiction</div>
-                    <div class="text-lg font-bold text-white mt-1">Jaipur, Rajasthan (302016)</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Location, Contact & Interactive Google Map Section -->
-    <section id="location" class="py-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-                
-                <!-- Left Column: Store Address & Direct Contact Channels -->
-                <div class="lg:col-span-5 bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-slate-200/80 flex flex-col justify-between space-y-6">
-                    <div class="space-y-6">
-                        <div>
-                            <span class="text-xs font-bold uppercase tracking-widest text-brand-red">Visit Or Connect</span>
-                            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">Store Location & Contact</h2>
-                        </div>
-
-                        <!-- Clickable Address Card -->
-                        <a href="https://www.google.com/maps/search/?api=1&query=26.912400,75.787300" target="_blank" rel="noopener noreferrer" class="block p-4 rounded-2xl bg-slate-50 hover:bg-blue-50/60 border border-slate-200/80 transition group">
-                            <div class="flex items-start gap-3.5">
-                                <div class="w-10 h-10 rounded-xl bg-brand-blue text-white flex items-center justify-center shrink-0 mt-0.5">
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                    <!-- Highlighted Home Delivery Banner Card -->
+                    <div class="bg-gradient-to-r from-brandBlue to-brandBlueDark text-white p-5 sm:p-6 rounded-2xl shadow-xl shadow-blue-900/15 border border-blue-400/30 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-white/15 border border-white/25 flex items-center justify-center shrink-0 mt-0.5">
+                                <svg class="w-6 h-6 text-amber-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="inline-flex items-center gap-1.5 text-[11px] font-extrabold uppercase tracking-wider text-amber-300">
+                                    <span>Express Doorstep Medicine Delivery</span>
                                 </div>
+                                <h2 class="text-base sm:text-lg font-extrabold text-white mt-0.5">
+                                    We Deliver Medicines Directly to Your Home!
+                                </h2>
+                                <p class="text-xs sm:text-sm text-blue-100 mt-1">
+                                    Call or WhatsApp your prescription to <strong class="text-white">+91 77425 08948</strong> for fast doorstep delivery across Bani Park &amp; Jaipur.
+                                </p>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/917742508948?text=Hello%20TrueMedic%20Pharmacy,%20I%20want%20to%20order%20medicines%20for%20Home%20Delivery." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-whatsapp hover:bg-whatsappDark text-white font-bold text-xs sm:text-sm px-4 py-3 rounded-xl shadow-md transition-all shrink-0">
+                            <span>Order Delivery</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Primary CTA Buttons -->
+                    <div class="pt-1 flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-3">
+                        <!-- Call Button -->
+                        <a href="tel:+917742508948" class="inline-flex items-center justify-center gap-2.5 bg-brandBlue hover:bg-brandBlueDark text-white font-bold text-sm sm:text-base px-6 py-4 rounded-2xl shadow-lg shadow-blue-900/20 transition-all hover:-translate-y-0.5">
+                            <svg class="w-5 h-5 fill-current shrink-0" viewBox="0 0 24 24">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                            </svg>
+                            <span>Call +91 77425 08948</span>
+                        </a>
+
+                        <!-- WhatsApp Order Button -->
+                        <a href="https://wa.me/917742508948?text=Hello%20TrueMedic%20Pharmacy,%20I%20would%20like%20to%20order%20medicines%20for%20home%20delivery." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2.5 bg-whatsapp hover:bg-whatsappDark text-white font-bold text-sm sm:text-base px-6 py-4 rounded-2xl shadow-lg shadow-green-900/20 transition-all hover:-translate-y-0.5">
+                            <svg class="w-5 h-5 fill-current shrink-0" viewBox="0 0 24 24">
+                                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.126.556 4.122 1.529 5.854l-1.529 5.584 5.715-1.499c1.685.918 3.614 1.442 5.669 1.442 6.627 0 12-5.373 12-12 0-6.627-5.373-12-11.384-11.381z"/>
+                            </svg>
+                            <span>WhatsApp Prescription</span>
+                        </a>
+
+                        <!-- Google Maps Direct Link -->
+                        <a href="https://maps.app.goo.gl/58ofdFdYPLQ3ZkG46" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-slate-800 border-2 border-slate-200 hover:border-brandBlue font-bold text-sm sm:text-base px-5 py-4 rounded-2xl shadow-sm transition-all hover:-translate-y-0.5">
+                            <svg class="w-5 h-5 text-brandRed shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                            </svg>
+                            <span>Store Directions</span>
+                        </a>
+
+                        <!-- Instagram Button -->
+                        <a href="https://www.instagram.com/truemedic_pharmacy?dlrf=MWdpMHFyYXJ4NWNo" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-instagram text-white font-bold text-sm sm:text-base px-5 py-4 rounded-2xl shadow-lg shadow-pink-900/15 transition-all hover:-translate-y-0.5">
+                            <svg class="w-5 h-5 fill-current shrink-0" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+
+                    <!-- 4 Key Trust Pillars Grid -->
+                    <div class="pt-5 border-t border-slate-200/80 grid grid-cols-2 sm:grid-cols-4 gap-3.5">
+                        <div class="bg-white/80 backdrop-blur-sm p-3.5 rounded-2xl border border-slate-200/80 shadow-sm">
+                            <div class="text-xs font-bold uppercase tracking-wider text-slate-400">Proprietor</div>
+                            <div class="text-sm sm:text-base font-extrabold text-slate-900 mt-0.5">Gaurav Tambi</div>
+                        </div>
+                        <div class="bg-white/80 backdrop-blur-sm p-3.5 rounded-2xl border border-slate-200/80 shadow-sm">
+                            <div class="text-xs font-bold uppercase tracking-wider text-slate-400">Service</div>
+                            <div class="text-sm sm:text-base font-extrabold text-brandRed mt-0.5">Home Delivery</div>
+                        </div>
+                        <div class="bg-white/80 backdrop-blur-sm p-3.5 rounded-2xl border border-slate-200/80 shadow-sm">
+                            <div class="text-xs font-bold uppercase tracking-wider text-slate-400">GST Verified</div>
+                            <div class="text-xs sm:text-sm font-mono font-bold text-slate-900 mt-1">08AGSPT3788N2Z1</div>
+                        </div>
+                        <div class="bg-white/80 backdrop-blur-sm p-3.5 rounded-2xl border border-slate-200/80 shadow-sm">
+                            <div class="text-xs font-bold uppercase tracking-wider text-slate-400">Store Hub</div>
+                            <div class="text-sm sm:text-base font-extrabold text-brandBlue mt-0.5">Bani Park, Jaipur</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right Column: Official Emblem Showcase Card (5 Cols) -->
+                <div class="lg:col-span-5">
+                    <div class="relative mx-auto max-w-lg lg:max-w-none">
+                        
+                        <!-- Decorative Ambient Glow Behind Card -->
+                        <div class="absolute -inset-2 bg-gradient-to-r from-brandBlue/20 via-brandRed/15 to-brandBlue/20 rounded-[2.5rem] blur-2xl -z-10"></div>
+
+                        <div class="bg-white/95 backdrop-blur-md rounded-[2rem] p-6 sm:p-8 shadow-2xl border border-blue-100/90 relative overflow-hidden">
+                            
+                            <!-- Top Brand Stripe -->
+                            <div class="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-brandBlue via-brandRed to-brandBlue"></div>
+
+                            <!-- Official Logo Container (Supports ./logo.jpg or ./image_d45068.jpg + High-Precision Vector Emblem) -->
+                            <div class="animate-float flex justify-center items-center py-2">
+                                
+                                <!-- 1. Real Uploaded Image Wrapper -->
+                                <div id="real-logo-wrapper" class="w-full max-w-[380px] aspect-[500/360] rounded-[50%] overflow-hidden shadow-[0_16px_35px_rgba(22,78,159,0.28)] border-[3px] border-slate-300 bg-slate-200 flex items-center justify-center">
+                                    <img 
+                                        id="real-logo-img"
+                                        src="logo.jpg" 
+                                        alt="TrueMedic Pharmacy Official Metallic Emblem" 
+                                        class="w-full h-full object-cover scale-[1.06] rounded-[50%]"
+                                        onerror="if (!this.dataset.triedAlt) { this.dataset.triedAlt = 'true'; this.src = 'image_d45068.jpg'; } else { document.getElementById('real-logo-wrapper').style.display = 'none'; document.getElementById('svg-logo-fallback').style.display = 'block'; }"
+                                    >
+                                </div>
+
+                                <!-- 2. High-Precision Vector Replica of the TrueMedic Pharmacy Metallic Oval Badge -->
+                                <div id="svg-logo-fallback" style="display: none;" class="w-full max-w-[410px] drop-shadow-[0_16px_28px_rgba(15,40,90,0.25)] select-none">
+                                    <svg viewBox="0 0 500 360" class="w-full h-auto" xmlns="http://www.w3.org/2000/svg">
+                                        <defs>
+                                            <linearGradient id="brushedSilver" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" stop-color="#f8fafc" />
+                                                <stop offset="22%" stop-color="#e2e8f0" />
+                                                <stop offset="45%" stop-color="#f1f5f9" />
+                                                <stop offset="55%" stop-color="#cbd5e1" />
+                                                <stop offset="78%" stop-color="#f8fafc" />
+                                                <stop offset="100%" stop-color="#94a3b8" />
+                                            </linearGradient>
+                                            <radialGradient id="centerSheen" cx="38%" cy="32%" r="70%">
+                                                <stop offset="0%" stop-color="#ffffff" />
+                                                <stop offset="45%" stop-color="#e5e9f0" />
+                                                <stop offset="82%" stop-color="#cbd5e1" />
+                                                <stop offset="100%" stop-color="#b4c0cf" />
+                                            </radialGradient>
+                                            <linearGradient id="chromeRim" x1="0%" y1="0%" x2="0%" y2="100%">
+                                                <stop offset="0%" stop-color="#ffffff" />
+                                                <stop offset="50%" stop-color="#cbd5e1" />
+                                                <stop offset="100%" stop-color="#64748b" />
+                                            </linearGradient>
+                                            <linearGradient id="royalBlue3D" x1="0%" y1="0%" x2="0%" y2="100%">
+                                                <stop offset="0%" stop-color="#2b6cb0" />
+                                                <stop offset="45%" stop-color="#164e9f" />
+                                                <stop offset="100%" stop-color="#0d326c" />
+                                            </linearGradient>
+                                            <linearGradient id="crimsonRed3D" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" stop-color="#ef4444" />
+                                                <stop offset="45%" stop-color="#c52228" />
+                                                <stop offset="100%" stop-color="#7f1d1d" />
+                                            </linearGradient>
+                                            <radialGradient id="rubyGem" cx="35%" cy="35%" r="65%">
+                                                <stop offset="0%" stop-color="#fda4af" />
+                                                <stop offset="40%" stop-color="#e11d48" />
+                                                <stop offset="85%" stop-color="#881337" />
+                                                <stop offset="100%" stop-color="#4c0519" />
+                                            </radialGradient>
+                                            <filter id="embossShadow" x="-15%" y="-15%" width="130%" height="130%">
+                                                <feDropShadow dx="1.5" dy="2.5" stdDeviation="1.8" flood-color="#0f172a" flood-opacity="0.38" />
+                                            </filter>
+                                            <filter id="subtleShadow" x="-10%" y="-10%" width="120%" height="120%">
+                                                <feDropShadow dx="0.8" dy="1.2" stdDeviation="0.9" flood-color="#0f172a" flood-opacity="0.28" />
+                                            </filter>
+                                            <path id="topArcPath" d="M 55,174 A 195,134 0 0,1 445,174" fill="none" />
+                                            <path id="bottomArcPath" d="M 90,204 A 168,120 0 0,0 410,204" fill="none" />
+                                        </defs>
+
+                                        <!-- Outer Metallic Chrome Rim -->
+                                        <ellipse cx="250" cy="180" rx="242" ry="170" fill="url(#chromeRim)" stroke="#94a3b8" stroke-width="1.5" />
+                                        <!-- Outer Royal Blue Border Ring -->
+                                        <ellipse cx="250" cy="180" rx="235" ry="163" fill="none" stroke="url(#royalBlue3D)" stroke-width="5.5" />
+                                        <!-- Main Brushed Metal Track -->
+                                        <ellipse cx="250" cy="180" rx="231" ry="159" fill="url(#brushedSilver)" stroke="#ffffff" stroke-width="1" />
+                                        <!-- Inner Crimson Red Oval Ring -->
+                                        <ellipse cx="250" cy="180" rx="184" ry="123" fill="none" stroke="#94a3b8" stroke-width="7.5" />
+                                        <ellipse cx="250" cy="180" rx="184" ry="123" fill="none" stroke="url(#crimsonRed3D)" stroke-width="4.5" />
+                                        <!-- Center Brushed Metallic Face -->
+                                        <ellipse cx="250" cy="180" rx="180" ry="119" fill="url(#centerSheen)" />
+                                        <ellipse cx="250" cy="180" rx="172" ry="112" fill="none" stroke="#ffffff" stroke-opacity="0.45" stroke-width="0.8" />
+                                        <ellipse cx="250" cy="180" rx="208" ry="141" fill="none" stroke="#ffffff" stroke-opacity="0.35" stroke-width="0.8" />
+
+                                        <!-- Top Curved Text -->
+                                        <text font-family="Merriweather, Georgia, serif" font-size="20.5" font-weight="700" fill="#164e9f" letter-spacing="0.6" filter="url(#subtleShadow)">
+                                            <textPath href="#topArcPath" startOffset="50%" text-anchor="middle">
+                                                Quality Medicine Delivered with Care
+                                            </textPath>
+                                        </text>
+
+                                        <!-- Ruby Gemstone Dots -->
+                                        <g transform="translate(56, 136)" filter="url(#subtleShadow)">
+                                            <circle cx="0" cy="0" r="8.5" fill="url(#chromeRim)" stroke="#64748b" stroke-width="0.8" />
+                                            <circle cx="0" cy="0" r="6.2" fill="url(#rubyGem)" />
+                                            <circle cx="-2" cy="-2" r="1.8" fill="#ffffff" fill-opacity="0.75" />
+                                        </g>
+                                        <g transform="translate(444, 136)" filter="url(#subtleShadow)">
+                                            <circle cx="0" cy="0" r="8.5" fill="url(#chromeRim)" stroke="#64748b" stroke-width="0.8" />
+                                            <circle cx="0" cy="0" r="6.2" fill="url(#rubyGem)" />
+                                            <circle cx="-2" cy="-2" r="1.8" fill="#ffffff" fill-opacity="0.75" />
+                                        </g>
+
+                                        <!-- Bottom Decorative Red Lines & "Pharmacy" Text -->
+                                        <path d="M 83,262 A 195,136 0 0,0 144,302" fill="none" stroke="url(#crimsonRed3D)" stroke-width="3.2" stroke-linecap="round" filter="url(#subtleShadow)" />
+                                        <path d="M 417,262 A 195,136 0 0,1 356,302" fill="none" stroke="url(#crimsonRed3D)" stroke-width="3.2" stroke-linecap="round" filter="url(#subtleShadow)" />
+
+                                        <text font-family="Merriweather, Georgia, serif" font-size="27" font-weight="700" fill="#164e9f" letter-spacing="2.5" filter="url(#subtleShadow)">
+                                            <textPath href="#bottomArcPath" startOffset="50%" text-anchor="middle">
+                                                Pharmacy
+                                            </textPath>
+                                        </text>
+
+                                        <!-- Center Top Emblem: Crescent Swoosh + 3D Blue Cross + Overlapping Red Leaf -->
+                                        <g transform="translate(250, 114)" filter="url(#embossShadow)">
+                                            <path d="M 38,-22 A 45,45 0 1,0 -6,43" fill="none" stroke="#e2e8f0" stroke-width="5.5" stroke-linecap="round" />
+                                            <path d="M 38,-22 A 45,45 0 1,0 -6,43" fill="none" stroke="url(#crimsonRed3D)" stroke-width="3.2" stroke-linecap="round" />
+                                            <path d="M -11,-30 H 9 V -12 H 27 V 8 H 9 V 26 H -11 V 8 H -29 V -12 H -11 Z" fill="url(#royalBlue3D)" stroke="#e2e8f0" stroke-width="2.2" stroke-linejoin="round" />
+                                            <path d="M -8,-27 H 6 V -9 H 24 V 5 H 6 V 23 H -8 V 5 H -26 V -9 H -8 Z" fill="none" stroke="#60a5fa" stroke-opacity="0.55" stroke-width="1" />
+                                            <path d="M -3,34 C -4,10 12,-8 35,-21 C 41,4 28,28 -3,34 Z" fill="url(#crimsonRed3D)" stroke="#f1f5f9" stroke-width="2" stroke-linejoin="round" />
+                                            <path d="M -1,31 C 8,16 19,2 32,-16" fill="none" stroke="#fecaca" stroke-width="1.6" stroke-linecap="round" />
+                                            <path d="M 8,17 L 19,15 M 14,8 L 25,6 M 20,-1 L 29,-3" fill="none" stroke="#fca5a5" stroke-width="1.2" stroke-linecap="round" />
+                                        </g>
+
+                                        <!-- Center Main Title: "True Medic" -->
+                                        <g filter="url(#embossShadow)">
+                                            <text x="250" y="212" text-anchor="middle" font-family="Merriweather, Georgia, serif" font-size="52" font-weight="900" letter-spacing="0.5">
+                                                <tspan fill="url(#royalBlue3D)" stroke="#f8fafc" stroke-width="1.8" paint-order="stroke fill">True</tspan>
+                                                <tspan dx="6" fill="url(#crimsonRed3D)" stroke="#f8fafc" stroke-width="1.8" paint-order="stroke fill">Medic</tspan>
+                                            </text>
+                                        </g>
+
+                                        <!-- Subtitle: "— PHARMACY —" -->
+                                        <g transform="translate(250, 244)" filter="url(#subtleShadow)">
+                                            <rect x="-136" y="-6" width="32" height="3.8" rx="1.5" fill="#164e9f" stroke="#f8fafc" stroke-width="1" />
+                                            <text x="4" y="0" text-anchor="middle" font-family="Inter, sans-serif" font-size="19" font-weight="800" fill="#164e9f" stroke="#f8fafc" stroke-width="0.8" paint-order="stroke fill" letter-spacing="7.5">
+                                                PHARMACY
+                                            </text>
+                                            <rect x="104" y="-6" width="32" height="3.8" rx="1.5" fill="#164e9f" stroke="#f8fafc" stroke-width="1" />
+                                        </g>
+                                    </svg>
+                                </div>
+
+                            </div>
+
+                            <!-- Card Footer Summary -->
+                            <div class="mt-6 pt-5 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
                                 <div>
-                                    <div class="text-xs font-bold uppercase text-brand-blue group-hover:underline">Principal Place of Business (Click for Maps)</div>
-                                    <p class="text-sm font-semibold text-slate-800 mt-1 leading-relaxed">
-                                        Basement Floor, Plot Number D 16-17, Doctors Bangla, Jhotwara Road, Bani Park, Jaipur, Rajasthan - 302016
-                                    </p>
-                                    <span class="inline-block mt-2 text-xs font-mono text-slate-500">GPS: 26.912400° N, 75.787300° E</span>
+                                    <div class="text-xs font-bold uppercase tracking-wider text-slate-400">Founder &amp; Proprietor</div>
+                                    <div class="text-base font-extrabold text-slate-900">Gaurav Tambi</div>
+                                </div>
+                                <div class="inline-flex items-center gap-2 bg-emerald-50 text-emerald-800 border border-emerald-200 px-3.5 py-1.5 rounded-xl text-xs font-bold">
+                                    <svg class="w-4 h-4 text-emerald-600 shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                    GSTIN: 08AGSPT3788N2Z1
                                 </div>
                             </div>
-                        </a>
 
-                        <!-- Contact Channels List -->
-                        <div class="space-y-3">
-                            <!-- Phone -->
-                            <a href="tel:+917742508948" class="flex items-center justify-between p-3.5 rounded-2xl border border-slate-200 hover:border-brand-blue hover:bg-blue-50/40 transition">
-                                <div class="flex items-center gap-3">
-                                    <div class="w-10 h-10 rounded-xl bg-blue-100 text-brand-blue flex items-center justify-center">
-                                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-                                    </div>
-                                    <div>
-                                        <div class="text-xs text-slate-500 font-medium">Direct Phone & Mobile</div>
-                                        <div class="text-sm font-bold text-slate-900">+91 77425 08948</div>
-                                    </div>
-                                </div>
-                                <span class="text-xs font-bold text-brand-blue">Call →</span>
-                            </a>
-
-                            <!-- WhatsApp -->
-                            <a href="https://wa.me/917742508948?text=Hello%20TrueMedic%20Pharmacy%2C%20I%20have%20a%20query." target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-3.5 rounded-2xl border border-slate-200 hover:border-emerald-600 hover:bg-emerald-50/40 transition">
-                                <div class="flex items-center gap-3">
-                                    <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center">
-                                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771z"/></svg>
-                                    </div>
-                                    <div>
-                                        <div class="text-xs text-slate-500 font-medium">WhatsApp Business</div>
-                                        <div class="text-sm font-bold text-slate-900">+91 77425 08948</div>
-                                    </div>
-                                </div>
-                                <span class="text-xs font-bold text-emerald-700">Chat →</span>
-                            </a>
-
-                            <!-- Instagram -->
-                            <a href="https://www.instagram.com/truemedic_pharmacy?dlrf=MWdpMHFyYXJ4NWNo" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-3.5 rounded-2xl border border-slate-200 hover:border-pink-500 hover:bg-pink-50/40 transition">
-                                <div class="flex items-center gap-3">
-                                    <div class="w-10 h-10 rounded-xl bg-instagram text-white flex items-center justify-center">
-                                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-                                    </div>
-                                    <div>
-                                        <div class="text-xs text-slate-500 font-medium">Official Instagram</div>
-                                        <div class="text-sm font-bold text-slate-900">@truemedic_pharmacy</div>
-                                    </div>
-                                </div>
-                                <span class="text-xs font-bold text-pink-600">Follow →</span>
-                            </a>
-
-                            <!-- Email -->
-                            <a href="mailto:amsnearyou@gmail.com" class="flex items-center justify-between p-3.5 rounded-2xl border border-slate-200 hover:border-brand-blue hover:bg-blue-50/40 transition">
-                                <div class="flex items-center gap-3">
-                                    <div class="w-10 h-10 rounded-xl bg-slate-100 text-slate-700 flex items-center justify-center">
-                                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-                                    </div>
-                                    <div>
-                                        <div class="text-xs text-slate-500 font-medium">Email Address</div>
-                                        <div class="text-sm font-bold text-slate-900">amsnearyou@gmail.com</div>
-                                    </div>
-                                </div>
-                                <span class="text-xs font-bold text-slate-600">Email →</span>
-                            </a>
                         </div>
                     </div>
-
-                    <a href="https://www.google.com/maps/search/?api=1&query=26.912400,75.787300" target="_blank" rel="noopener noreferrer" class="w-full py-4 rounded-2xl bg-brand-red hover:bg-brand-darkRed text-white font-bold text-center shadow-lg transition flex items-center justify-center gap-2">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                        Open Navigation in Google Maps
-                    </a>
                 </div>
 
-                <!-- Right Column: Live Embedded Google Map Pinning 26.912400, 75.787300 -->
-                <div class="lg:col-span-7 bg-white rounded-3xl p-3 shadow-xl border border-slate-200/80 min-h-[420px] flex flex-col">
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 4. PHARMACY SERVICES & CARE BENTO GRID     -->
+    <!-- ========================================== -->
+    <section id="services" class="py-16 sm:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="max-w-3xl mx-auto text-center space-y-3 mb-12 sm:mb-16">
+            <span class="inline-block text-xs font-extrabold uppercase tracking-[0.22em] text-brandBlue bg-blue-50 border border-blue-200 px-3.5 py-1 rounded-full">
+                Comprehensive Pharmaceutical Care &amp; Doorstep Delivery
+            </span>
+            <h2 class="font-serif text-2xl sm:text-4xl font-black text-slate-900">
+                Why Patients &amp; Families Trust TrueMedic
+            </h2>
+            <p class="text-slate-600 text-base sm:text-lg">
+                From fast home delivery of medicines across Jaipur to strict cold-chain storage at our Bani Park facility, we deliver quality healthcare with care.
+            </p>
+        </div>
+
+        <!-- 4-Card Modern Bento Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <!-- Service Card 1: Fast Home Delivery of Medicines (Highlighted) -->
+            <div class="bg-gradient-to-b from-blue-50/80 to-white rounded-3xl p-7 border-2 border-brandBlue/30 shadow-md hover:shadow-xl hover:border-brandBlue transition-all flex flex-col justify-between group relative overflow-hidden">
+                <div class="absolute top-3 right-3 bg-brandRed text-white text-[10px] font-extrabold uppercase tracking-wider px-2.5 py-1 rounded-full">
+                    Doorstep Service
+                </div>
+                <div>
+                    <div class="w-14 h-14 rounded-2xl bg-brandBlue text-white flex items-center justify-center mb-6 shadow-md shadow-blue-900/15 group-hover:scale-105 transition-transform">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-extrabold text-slate-900 mb-2">
+                        Fast Home Delivery of Medicines
+                    </h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Get your prescription medicines, chronic care refills, and healthcare essentials safely delivered right to your doorstep in Bani Park and across Jaipur.
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-slate-200/80">
+                    <a href="tel:+917742508948" class="text-xs font-extrabold text-brandBlue hover:underline inline-flex items-center gap-1">
+                        <span>Call +91 77425 08948 for Delivery</span>
+                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Service Card 2: Genuine Prescription & OTC Medicines -->
+            <div class="bg-white rounded-3xl p-7 border border-slate-200/90 shadow-sm hover:shadow-xl hover:border-blue-300 transition-all flex flex-col justify-between group">
+                <div>
+                    <div class="w-14 h-14 rounded-2xl bg-blue-50 text-brandBlue flex items-center justify-center mb-6 group-hover:bg-brandBlue group-hover:text-white transition-colors">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-extrabold text-slate-900 mb-2">
+                        100% Genuine Prescription Medicines
+                    </h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Sourced directly from authorized pharmaceutical distributors with verified batch numbers, clear expiry dates, cold-chain storage, and proper GST billing.
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-slate-100 text-xs font-bold text-brandBlue flex items-center gap-1">
+                    <span>Zero Compromise on Quality</span>
+                </div>
+            </div>
+
+            <!-- Service Card 3: WhatsApp Prescription Ordering -->
+            <div class="bg-white rounded-3xl p-7 border border-slate-200/90 shadow-sm hover:shadow-xl hover:border-emerald-300 transition-all flex flex-col justify-between group">
+                <div>
+                    <div class="w-14 h-14 rounded-2xl bg-emerald-50 text-whatsapp flex items-center justify-center mb-6 group-hover:bg-whatsapp group-hover:text-white transition-colors">
+                        <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24">
+                            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.126.556 4.122 1.529 5.854l-1.529 5.584 5.715-1.499c1.685.918 3.614 1.442 5.669 1.442 6.627 0 12-5.373 12-12 0-6.627-5.373-12-11.384-11.381z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-extrabold text-slate-900 mb-2">
+                        WhatsApp Prescription Ordering
+                    </h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Send a photo of your doctor's prescription on WhatsApp (<strong class="text-slate-800">+91 77425 08948</strong>) for instant stock confirmation and doorstep dispatch.
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-slate-100">
+                    <a href="https://wa.me/917742508948?text=Hello%20TrueMedic%20Pharmacy,%20I%20would%20like%20to%20share%20a%20prescription%20for%20home%20delivery." target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-whatsapp hover:underline inline-flex items-center gap-1">
+                        <span>Send Prescription on WhatsApp</span>
+                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Service Card 4: Surgical, OTC & Wellness Care -->
+            <div class="bg-white rounded-3xl p-7 border border-slate-200/90 shadow-sm hover:shadow-xl hover:border-red-300 transition-all flex flex-col justify-between group">
+                <div>
+                    <div class="w-14 h-14 rounded-2xl bg-red-50 text-brandRed flex items-center justify-center mb-6 group-hover:bg-brandRed group-hover:text-white transition-colors">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-extrabold text-slate-900 mb-2">
+                        OTC, Surgical &amp; Wellness Care
+                    </h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Complete range of BP monitors, glucometers, orthopedic supports, wound dressings, nutritional supplements, and personal care items delivered home.
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-slate-100 text-xs font-bold text-brandRed">
+                    <span>Complete Home-Care Supplies</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 5. OFFICIAL CREDENTIALS & PROPRIETORSHIP   -->
+    <!-- ========================================== -->
+    <section id="credentials" class="bg-gradient-to-br from-slate-900 via-[#0f2952] to-slate-900 text-white py-16 sm:py-20 border-y border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                
+                <!-- Left Column: Leadership Statement (7 Cols) -->
+                <div class="lg:col-span-7 space-y-4">
+                    <div class="inline-flex items-center gap-2 bg-white/10 border border-white/15 px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-widest text-blue-200">
+                        Official Business Credentials
+                    </div>
+                    <h2 class="font-serif text-2xl sm:text-4xl font-black tracking-tight text-white">
+                        Led with Integrity by <span class="text-blue-300">Gaurav Tambi</span>
+                    </h2>
+                    <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl">
+                        TrueMedic Pharmacy operates as a registered proprietorship in Jaipur, Rajasthan, committed to transparent pricing, authentic pharmaceutical sourcing, and responsive patient support.
+                    </p>
+                </div>
+
+                <!-- Right Column: Official GST Registration Spec Card (5 Cols) -->
+                <div class="lg:col-span-5">
+                    <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-6 sm:p-8 space-y-4 shadow-2xl">
+                        <div class="flex items-center justify-between border-b border-white/15 pb-4">
+                            <div>
+                                <div class="text-xs uppercase tracking-wider text-blue-200 font-semibold">Trade Name</div>
+                                <div class="text-lg sm:text-xl font-black tracking-wide text-white mt-0.5">TRUEMEDIC PHARMACY</div>
+                            </div>
+                            <span class="bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 text-xs font-bold px-3 py-1 rounded-full">
+                                Active &amp; Verified
+                            </span>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-1 text-sm">
+                            <div>
+                                <div class="text-xs text-slate-400 uppercase tracking-wider">Legal Name / Proprietor</div>
+                                <div class="font-bold text-white mt-0.5">Gaurav Tambi</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 uppercase tracking-wider">Constitution</div>
+                                <div class="font-bold text-white mt-0.5">Proprietorship</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 uppercase tracking-wider">GST Registration No.</div>
+                                <div class="font-mono font-bold text-amber-300 mt-0.5">08AGSPT3788N2Z1</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 uppercase tracking-wider">Jurisdiction</div>
+                                <div class="font-bold text-white mt-0.5">Jaipur, Rajasthan</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 6. STORE LOCATION, CONTACT & LIVE MAP HUB  -->
+    <!-- ========================================== -->
+    <section id="location" class="py-16 sm:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Heading -->
+        <div class="max-w-3xl mx-auto text-center space-y-3 mb-12 sm:mb-16">
+            <span class="inline-block text-xs font-extrabold uppercase tracking-[0.22em] text-brandRed bg-red-50 border border-red-200 px-3.5 py-1 rounded-full">
+                Visit Our Store or Order Home Delivery
+            </span>
+            <h2 class="font-serif text-2xl sm:text-4xl font-black text-slate-900">
+                Store Location &amp; Home Delivery Helpline
+            </h2>
+            <p class="text-slate-600 text-base sm:text-lg">
+                Conveniently located at Doctors Bangla, Jhotwara Road in Bani Park, Jaipur. Click the address or button below to open our exact store pin in Google Maps.
+            </p>
+        </div>
+
+        <!-- 2-Column Split Contact & Interactive Map -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+            
+            <!-- Left Column: Store Details & Direct Contact Buttons (5 Cols) -->
+            <div class="lg:col-span-5 bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/90 shadow-xl flex flex-col justify-between space-y-6">
+                
+                <div class="space-y-5">
+                    <!-- Clickable Store Address Box -->
+                    <a href="https://maps.app.goo.gl/58ofdFdYPLQ3ZkG46" target="_blank" rel="noopener noreferrer" class="block p-5 rounded-2xl bg-slate-50 hover:bg-blue-50/60 border border-slate-200/90 hover:border-brandBlue transition-all group">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-brandBlue text-white flex items-center justify-center shrink-0 mt-0.5 shadow-md shadow-blue-900/15">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                </svg>
+                            </div>
+                            <div class="space-y-1.5">
+                                <div class="flex flex-wrap items-center gap-2">
+                                    <span class="text-xs font-extrabold uppercase tracking-wider text-brandBlue">
+                                        Registered Pharmacy Address
+                                    </span>
+                                    <span class="text-[11px] bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-bold">
+                                        Home Delivery Hub
+                                    </span>
+                                </div>
+                                <p class="text-base font-bold text-slate-900 leading-snug">
+                                    TrueMedic Pharmacy
+                                </p>
+                                <p class="text-sm text-slate-600 leading-relaxed">
+                                    Basement Floor, Plot No. D 16-17,<br>
+                                    Doctors Bangla, Jhotwara Road,<br>
+                                    Bani Park, Jaipur, Rajasthan - 302016
+                                </p>
+                                <span class="inline-flex items-center gap-1.5 text-xs font-bold text-brandRed group-hover:underline pt-1">
+                                    <span>Open Exact Location in Google Maps</span>
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Direct Contact Channels List -->
+                    <div class="space-y-3">
+                        
+                        <!-- 1. Clickable Phone Number -->
+                        <a href="tel:+917742508948" class="flex items-center justify-between p-4 rounded-2xl bg-brandBlue hover:bg-brandBlueDark text-white shadow-md shadow-blue-900/15 transition-all hover:-translate-y-0.5 group">
+                            <div class="flex items-center gap-3.5">
+                                <div class="w-11 h-11 rounded-xl bg-white/15 flex items-center justify-center shrink-0">
+                                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <span class="block text-[11px] uppercase tracking-wider text-blue-200 font-semibold">Home Delivery &amp; Store Helpline</span>
+                                    <span class="text-base sm:text-lg font-extrabold tracking-wide">+91 77425 08948</span>
+                                </div>
+                            </div>
+                            <span class="text-xs font-bold bg-white/15 px-3 py-1.5 rounded-lg group-hover:bg-white group-hover:text-brandBlue transition-colors">
+                                Call Now
+                            </span>
+                        </a>
+
+                        <!-- 2. Clickable WhatsApp Business -->
+                        <a href="https://wa.me/917742508948?text=Hello%20TrueMedic%20Pharmacy,%20I%20would%20like%20to%20order%20medicines%20for%20home%20delivery." target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-4 rounded-2xl bg-whatsapp hover:bg-whatsappDark text-white shadow-md shadow-green-900/15 transition-all hover:-translate-y-0.5 group">
+                            <div class="flex items-center gap-3.5">
+                                <div class="w-11 h-11 rounded-xl bg-white/15 flex items-center justify-center shrink-0">
+                                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                        <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.126.556 4.122 1.529 5.854l-1.529 5.584 5.715-1.499c1.685.918 3.614 1.442 5.669 1.442 6.627 0 12-5.373 12-12 0-6.627-5.373-12-11.384-11.381z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <span class="block text-[11px] uppercase tracking-wider text-green-100 font-semibold">WhatsApp Prescription Delivery</span>
+                                    <span class="text-base sm:text-lg font-extrabold">+91 77425 08948</span>
+                                </div>
+                            </div>
+                            <span class="text-xs font-bold bg-white/15 px-3 py-1.5 rounded-lg group-hover:bg-white group-hover:text-whatsapp transition-colors">
+                                Chat
+                            </span>
+                        </a>
+
+                        <!-- 3. Clickable Instagram -->
+                        <a href="https://www.instagram.com/truemedic_pharmacy?dlrf=MWdpMHFyYXJ4NWNo" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-4 rounded-2xl bg-slate-50 hover:bg-pink-50/60 text-slate-800 border border-slate-200 hover:border-pink-500 transition-all group">
+                            <div class="flex items-center gap-3.5 min-w-0">
+                                <div class="w-11 h-11 rounded-xl bg-instagram text-white flex items-center justify-center shrink-0 shadow-sm">
+                                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                    </svg>
+                                </div>
+                                <div class="truncate">
+                                    <span class="block text-[11px] uppercase tracking-wider text-slate-400 font-semibold">Official Instagram</span>
+                                    <span class="text-sm sm:text-base font-bold text-slate-800 truncate">@truemedic_pharmacy</span>
+                                </div>
+                            </div>
+                            <span class="text-xs font-bold text-pink-600 shrink-0">Follow →</span>
+                        </a>
+
+                        <!-- 4. Clickable Email -->
+                        <a href="mailto:amsnearyou@gmail.com" class="flex items-center justify-between p-4 rounded-2xl bg-slate-50 hover:bg-blue-50/60 text-slate-800 border border-slate-200 hover:border-brandBlue transition-all group">
+                            <div class="flex items-center gap-3.5 min-w-0">
+                                <div class="w-11 h-11 rounded-xl bg-red-50 text-brandRed flex items-center justify-center shrink-0">
+                                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                                    </svg>
+                                </div>
+                                <div class="truncate">
+                                    <span class="block text-[11px] uppercase tracking-wider text-slate-400 font-semibold">Official Email</span>
+                                    <span class="text-sm sm:text-base font-bold text-slate-800 truncate">amsnearyou@gmail.com</span>
+                                </div>
+                            </div>
+                            <svg class="w-5 h-5 text-slate-400 group-hover:text-brandBlue group-hover:translate-x-1 transition-all shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Proprietor Sign-off Footer -->
+                <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+                    <span>Proprietor: <strong class="text-slate-800">Gaurav Tambi</strong></span>
+                    <span class="font-mono font-semibold text-slate-700">PIN: 302016</span>
+                </div>
+
+            </div>
+
+            <!-- Right Column: Large Interactive Google Map Embed (7 Cols) -->
+            <div class="lg:col-span-7 bg-white rounded-3xl p-3 sm:p-4 border border-slate-200/90 shadow-xl flex flex-col min-h-[440px] lg:min-h-full relative overflow-hidden">
+                <div class="relative w-full h-full min-h-[420px] rounded-2xl overflow-hidden bg-slate-100 flex-1">
                     <iframe 
-                        title="TrueMedic Pharmacy Exact Location Map"
-                        src="https://maps.google.com/maps?q=26.912400,75.787300&hl=en&z=16&output=embed" 
-                        class="w-full flex-1 rounded-2xl border-0 min-h-[400px]" 
-                        allowfullscreen="" 
+                        title="TrueMedic Pharmacy Location - Doctors Bangla, Bani Park, Jaipur"
+                        src="https://maps.google.com/maps?q=TrueMedic+Pharmacy+Doctors+Bangla+Jhotwara+Road+Bani+Park+Jaipur+302016&hl=en&z=16&output=embed" 
+                        class="w-full h-full min-h-[420px] border-0" 
                         loading="lazy" 
                         referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
-                </div>
 
+                    <!-- Floating Overlay Badge & Navigation Button -->
+                    <div class="absolute bottom-4 left-4 right-4 sm:left-6 sm:right-6 bg-white/95 backdrop-blur-md p-4 rounded-2xl shadow-lg border border-slate-200/90 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+                        <div>
+                            <div class="text-xs font-extrabold uppercase tracking-wider text-brandBlue">
+                                TrueMedic Pharmacy • Bani Park, Jaipur
+                            </div>
+                            <div class="text-sm font-bold text-slate-900">
+                                Plot No. D 16-17, Doctors Bangla, Jhotwara Road
+                            </div>
+                        </div>
+                        <a href="https://maps.app.goo.gl/58ofdFdYPLQ3ZkG46" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-brandRed hover:bg-brandRedDark text-white text-xs sm:text-sm font-bold px-5 py-2.5 rounded-xl shadow-md transition-colors shrink-0">
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                                <path d="M21.71 11.29l-9-9c-.39-.39-1.02-.39-1.41 0l-9 9c-.39.39-.39 1.02 0 1.41l9 9c.39.39 1.02.39 1.41 0l9-9c.39-.38.39-1.01 0-1.41zM14 14.5V12h-4v3H8v-4c0-.55.45-1 1-1h5V7.5l3.5 3.5-3.5 3.5z"/>
+                            </svg>
+                            <span>Open Navigation in Google Maps</span>
+                        </a>
+                    </div>
+                </div>
             </div>
+
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-slate-900 text-slate-400 py-10 border-t border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm">
-            <div>
-                <span class="font-bold text-white">TrueMedic Pharmacy</span> • Proprietor: <span class="text-slate-200">Gaurav Tambi</span> • GSTIN: <span class="font-mono text-emerald-400">08AGSPT3788N2Z1</span>
+    <!-- ========================================== -->
+    <!-- 7. FULL CORPORATE FOOTER                   -->
+    <!-- ========================================== -->
+    <footer class="bg-slate-950 text-slate-400 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
+                
+                <!-- Col 1: Brand Info -->
+                <div class="space-y-4">
+                    <div class="font-serif text-2xl font-black tracking-tight text-white">
+                        <span class="text-blue-400">True</span> <span class="text-red-400">Medic</span>
+                        <span class="block text-[11px] font-sans font-extrabold tracking-[0.25em] text-slate-300 uppercase mt-1">
+                            — PHARMACY —
+                        </span>
+                    </div>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        "Quality Medicine Delivered with Care." Fast &amp; reliable <strong class="text-slate-200">home delivery of medicines</strong> across Bani Park and Jaipur.
+                    </p>
+                </div>
+
+                <!-- Col 2: Official Registration -->
+                <div class="space-y-3">
+                    <h4 class="text-xs font-extrabold uppercase tracking-wider text-white">Official Registration</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li>Trade Name: <strong class="text-slate-200">TRUEMEDIC PHARMACY</strong></li>
+                        <li>Proprietor: <strong class="text-slate-200">Gaurav Tambi</strong></li>
+                        <li>GSTIN: <span class="font-mono text-emerald-400 font-semibold">08AGSPT3788N2Z1</span></li>
+                        <li>Service: In-Store &amp; Home Delivery</li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Store Address -->
+                <div class="space-y-3">
+                    <h4 class="text-xs font-extrabold uppercase tracking-wider text-white">Pharmacy Address</h4>
+                    <p class="text-sm leading-relaxed">
+                        Basement Floor, Plot No. D 16-17,<br>
+                        Doctors Bangla, Jhotwara Road,<br>
+                        Bani Park, Jaipur, Rajasthan - 302016
+                    </p>
+                    <a href="https://maps.app.goo.gl/58ofdFdYPLQ3ZkG46" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-xs font-bold text-blue-400 hover:text-blue-300">
+                        <span>View Store on Google Maps</span>
+                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Col 4: Direct Contact -->
+                <div class="space-y-3">
+                    <h4 class="text-xs font-extrabold uppercase tracking-wider text-white">Direct Contact</h4>
+                    <ul class="space-y-2.5 text-sm">
+                        <li>
+                            <a href="tel:+917742508948" class="hover:text-white transition-colors flex items-center gap-2">
+                                <span class="text-blue-400 font-semibold">Phone:</span> +91 77425 08948
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/917742508948?text=Hello%20TrueMedic%20Pharmacy,%20I%20would%20like%20to%20order%20medicines%20for%20home%20delivery." target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors flex items-center gap-2">
+                                <span class="text-emerald-400 font-semibold">WhatsApp:</span> +91 77425 08948
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/truemedic_pharmacy?dlrf=MWdpMHFyYXJ4NWNo" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors flex items-center gap-2">
+                                <span class="text-pink-400 font-semibold">Instagram:</span> @truemedic_pharmacy
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:amsnearyou@gmail.com" class="hover:text-white transition-colors flex items-center gap-2">
+                                <span class="text-red-400 font-semibold">Email:</span> amsnearyou@gmail.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
-            <div class="flex items-center gap-5">
-                <a href="https://truemedic.in" class="hover:text-white transition">truemedic.in</a>
-                <a href="https://www.instagram.com/truemedic_pharmacy?dlrf=MWdpMHFyYXJ4NWNo" target="_blank" rel="noopener noreferrer" class="hover:text-pink-400 transition">Instagram</a>
-                <a href="mailto:amsnearyou@gmail.com" class="hover:text-white transition">Email</a>
+
+            <!-- Bottom Copyright Bar -->
+            <div class="pt-8 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+                <p>© <span id="year">2026</span> TrueMedic Pharmacy (Proprietor: Gaurav Tambi). All Rights Reserved.</p>
+                <p>Official Domain: <a href="https://truemedic.in" class="text-slate-300 hover:underline">truemedic.in</a> • GSTIN: 08AGSPT3788N2Z1</p>
             </div>
         </div>
     </footer>
 
-    <!-- Sticky Mobile Bottom Quick-Action Bar -->
-    <div class="fixed bottom-0 inset-x-0 z-50 md:hidden bg-white/95 backdrop-blur-md border-t border-slate-200 px-3 py-2 shadow-2xl">
-        <div class="grid grid-cols-4 gap-2">
-            <a href="tel:+917742508948" class="flex flex-col items-center justify-center py-2 rounded-xl bg-brand-blue text-white font-bold text-xs">
-                <svg class="w-4 h-4 mb-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-                Call
+    <!-- ========================================== -->
+    <!-- 8. FLOATING MOBILE BOTTOM ACTION BAR       -->
+    <!-- ========================================== -->
+    <div class="fixed bottom-0 left-0 right-0 z-50 lg:hidden bg-white/95 backdrop-blur-md border-t border-slate-200 px-2.5 py-2 shadow-[0_-8px_20px_rgba(15,23,42,0.08)]">
+        <div class="grid grid-cols-4 gap-2 max-w-md mx-auto">
+            <a href="tel:+917742508948" class="flex flex-col items-center justify-center bg-brandBlue text-white font-bold text-[11px] py-2 rounded-xl shadow-sm active:scale-95 transition-transform">
+                <svg class="w-4 h-4 fill-current mb-0.5" viewBox="0 0 24 24">
+                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                </svg>
+                <span>Call</span>
             </a>
-            <a href="https://wa.me/917742508948" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center justify-center py-2 rounded-xl bg-emerald-600 text-white font-bold text-xs">
-                <svg class="w-4 h-4 mb-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771z"/></svg>
-                WhatsApp
+            <a href="https://wa.me/917742508948?text=Hello%20TrueMedic%20Pharmacy,%20I%20would%20like%20to%20order%20medicines%20for%20home%20delivery." target="_blank" rel="noopener noreferrer" class="flex flex-col items-center justify-center bg-whatsapp text-white font-bold text-[11px] py-2 rounded-xl shadow-sm active:scale-95 transition-transform">
+                <svg class="w-4 h-4 fill-current mb-0.5" viewBox="0 0 24 24">
+                    <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771z"/>
+                </svg>
+                <span>Delivery</span>
             </a>
-            <a href="https://www.instagram.com/truemedic_pharmacy?dlrf=MWdpMHFyYXJ4NWNo" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center justify-center py-2 rounded-xl bg-instagram text-white font-bold text-xs">
-                <svg class="w-4 h-4 mb-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162z"/></svg>
-                Instagram
+            <a href="https://www.instagram.com/truemedic_pharmacy?dlrf=MWdpMHFyYXJ4NWNo" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center justify-center bg-instagram text-white font-bold text-[11px] py-2 rounded-xl shadow-sm active:scale-95 transition-transform">
+                <svg class="w-4 h-4 fill-current mb-0.5" viewBox="0 0 24 24">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162z"/>
+                </svg>
+                <span>Instagram</span>
             </a>
-            <a href="https://www.google.com/maps/search/?api=1&query=26.912400,75.787300" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center justify-center py-2 rounded-xl bg-brand-red text-white font-bold text-xs">
-                <svg class="w-4 h-4 mb-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
-                Map
+            <a href="https://maps.app.goo.gl/58ofdFdYPLQ3ZkG46" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center justify-center bg-slate-900 text-white font-bold text-[11px] py-2 rounded-xl shadow-sm active:scale-95 transition-transform">
+                <svg class="w-4 h-4 text-brandRed fill-current mb-0.5" viewBox="0 0 24 24">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                </svg>
+                <span>Directions</span>
             </a>
         </div>
     </div>
 
+    <script>
+        // Keep footer year current automatically
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
